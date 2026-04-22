@@ -115,4 +115,12 @@ class Dog extends Animal{
     super.eat()
     console.log(this.name + '小狗在吃东西')
   }
+
+  m1():void;
+  m1(name:string):void;
+  m1(age:number):void;
+
+  m1(name?:string | number, age?:number){
+
+}
 }
