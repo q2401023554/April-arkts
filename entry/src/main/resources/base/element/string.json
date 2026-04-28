@@ -31,6 +31,18 @@
     {
       "name": "EntryAbility1_label",
       "value": "label"
+    },
+    {
+      "name": "profile_name",
+      "value": "Zhang San"
+    },
+    {
+      "name": "profile_title",
+      "value": "Senior Software Engineer"
+    },
+    {
+      "name": "profile_bio",
+      "value": "Focus on HarmonyOS development, love open source technology, enjoy exploring new technologies."
     }
   ]
 }

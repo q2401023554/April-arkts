@@ -23,6 +23,18 @@
     {
       "name": "signin",
       "value": "登入"
+    },
+    {
+      "name": "profile_name",
+      "value": "张三"
+    },
+    {
+      "name": "profile_title",
+      "value": "高级软件工程师"
+    },
+    {
+      "name": "profile_bio",
+      "value": "专注于HarmonyOS开发，热爱开源技术，喜欢探索新技术。"
     }
   ]
 }

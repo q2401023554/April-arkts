@@ -2,6 +2,22 @@
   "src": [
     "pages/zy421",
     "pages/Index",
-    "pages/zy422"
+    "pages/zy422",
+    "pages/HomePage",
+    "pages/zy423_UI",
+    "pages/zy423_u3",
+    "pages/zy423_u5",
+    "pages/zy423_u6",
+    "pages/zy424_u2",
+    "pages/sk424",
+    "pages/LoginPage",
+    "pages/SearchPage",
+    "pages/ProgressPage",
+    "pages/zy425_u2",
+    "pages/zy425_u4",
+    "pages/SettingPage",
+    "pages/ShowPage",
+    "pages/kt428",
+    "pages/PromptActionPage"
   ]
 }
