@@ -18,6 +18,9 @@
     "pages/SettingPage",
     "pages/ShowPage",
     "pages/kt428",
-    "pages/PromptActionPage"
+    "pages/PromptActionPage",
+    "pages/kt429",
+    "pages/kt429_2",
+    "pages/kt429_3"
   ]
 }

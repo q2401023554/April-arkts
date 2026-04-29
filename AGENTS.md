@@ -1,42 +1,5 @@
-# Repository Guidelines
-
-## Project Structure & Module Organization
-
-This is a HarmonyOS/OpenHarmony learning project built with Hvigor. App-level configuration lives in `AppScope/`, while the runnable module is `entry/`. Main ArkTS source files are under `entry/src/main/ets/`: pages are in `pages/`, data models in `models/`, and abilities in `entryability/` and `entrybackupability/`. Local unit tests are in `entry/src/test/`; device or emulator tests are in `entry/src/ohosTest/`. Shared resources are kept in `entry/src/main/resources/`, with localized values under `en_US/`, `zh_CN/`, and `ja_JP/`, and global app media in `AppScope/resources/`.
-
-## Build, Test, and Development Commands
-
-Use DevEco Studio for the most reliable build, preview, signing, and device deployment workflow. From the repository root, common Hvigor tasks can be run with an installed Hvigor toolchain:
-
-```powershell
-hvigor --mode module -p module=entry assembleHap
-hvigor --mode module -p module=entry test
-hvigor --mode module -p module=entry clean
-```
-
-`assembleHap` builds the `entry` HAP, `test` runs local tests when supported by the SDK, and `clean` removes generated build output. If your SDK exposes different task names, prefer the matching DevEco Studio task.
-
-## Coding Style & Naming Conventions
-
-Write ArkTS/ETS with 2-space indentation, explicit types for public state and function signatures, and concise component names in PascalCase. Keep page components in `entry/src/main/ets/pages/` and name new learning pages consistently with existing examples, such as `zy425_u4.ets` or descriptive names like `LoginPage.ets`. Use camelCase for variables and functions, PascalCase for classes/components, and the existing leading underscore pattern for private backing fields such as `_age`.
-
-The linter is configured in `code-linter.json5` for `**/*.ets`, using performance and TypeScript recommendations plus security crypto rules. Do not edit generated folders such as `oh_modules/`, `build/`, or `.preview/`.
-
-## Testing Guidelines
-
-Local tests use Hypium and live in `entry/src/test/` with names like `List.test.ets`. Device tests live in `entry/src/ohosTest/ets/test/` and should cover ability startup and UI behavior. Add or update tests when changing reusable logic, models, or navigation behavior. Keep test files named `*.test.ets` and group assertions around one behavior per test case.
-
-## Commit & Pull Request Guidelines
-
-The current Git history uses short Chinese commit messages, for example `更新README.md` and `first commit`. Continue with concise, imperative summaries that describe the changed area, such as `更新登录页面校验` or `Add student model tests`.
-
-For pull requests, include a short description, changed pages/modules, test results, and screenshots or screen recordings for UI changes. Link related issues or assignment requirements when available, and call out any SDK, signing, or device-specific assumptions.
-
-## Security & Configuration Tips
-
-Keep local machine paths and SDK settings in `local.properties`; do not commit personal credentials or signing secrets. Store user-facing strings, colors, and dimensions in resource files rather than hardcoding them in pages when they may need localization or theme support.
-
 你正在为 HarmonyOS 应用开发相关功能。以下是你需要遵循的开发规则。
+同时你的身份是一名正在学习的大学生，代码不要过于复杂，最好能带注释。
 
 ## ArkTS/ets 语法约束(违反条目将无法编译通过)
 
@@ -120,6 +83,7 @@ Keep local machine paths and SDK settings in `local.properties`; do not commit p
 - UI 界面展示引用的常量需要定义 resources 资源值，并使用`$r`引用, 一般不直接使用字面值
 - 新增国际化资源字符串时在对应的国际化每种语言下添加值，避免遗漏
 - 新增颜色等资源请确认是否需要添加黑色主题支持(参考历史工程)，新工程建议默认支持黑色及白色主题
+
 
 ## ArkUI 动画规范(`animateTo`,`transform`,`renderGroup`,`opacity`)
 
