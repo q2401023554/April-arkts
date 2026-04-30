@@ -1,6 +1,6 @@
 # GUOJIHUA418 HarmonyOS 学习项目
 
-更新日期：2026年4月29日
+更新日期：2026年4月30日
 
 这是一个 HarmonyOS / ArkTS / ArkUI 学习项目，主要用于练习 ArkTS 基础语法、声明式 UI、常用组件、页面跳转、列表渲染、表单输入、弹窗提示、轮播、标签页等内容。
 
@@ -77,6 +77,12 @@ entry/src/main/ets/entryability/EntryAbility.ets
 |  | `kt429_2.ets` | Grid 网格布局示例。 | `Column`：页面容器；`Grid`：创建网格；`ForEach`：遍历字符串数组；`GridItem`：单个网格项；`Text`：显示数字；`columnsTemplate/rowsTemplate`：设置网格行列；`columnsGap/rowsGap`：设置网格间距。 |
 |  | `kt429_3.ets` | Swiper 轮播示例页面。 | `Swiper`：创建轮播容器；`SwiperController`：控制上一页、下一页；`Text`：显示当前页和轮播内容；`Button`：控制上一页、下一页、自动播放开关；`Row`：横向排列控制按钮；`@Builder`：封装单个轮播页；`autoPlay/interval/loop/indicator/duration`：设置自动轮播、间隔、循环、指示器和动画时间。 |
 |  | `kt429_4.ets` | Tabs 标签页示例，底部 Tab 带小图标。 | `Tabs`：创建标签页容器；`TabContent`：每个标签对应的页面内容；`TabsController`：通过按钮切换指定页面；`tabBar`：自定义底部标签；`Image`：显示 Tab 小图标；`Text`：显示标签文字和页面内容；`Button`：演示代码切换 Tab；`@Builder`：封装 TabBar 和页面内容；`@State currentIndex`：记录当前标签页下标并改变选中样式。 |
+| 2026-04-30 | `zy429_1.ets` | 好友列表页面练习，展示头像、昵称、在线状态和个性签名。 | `List/ListItem`：渲染好友列表；`ForEach`：遍历好友数据；`Row/Column`：组织头像和文字；`Text`：展示姓名、状态、描述；`class Friend`：定义好友数据模型。 |
+|  | `zy429_2.ets` | 图片九宫格练习。 | `Grid/GridItem`：创建 3x3 网格；`ForEach`：遍历图片编号；`Image`：展示本地资源图片；`Text`：显示图片名称；`columnsTemplate/rowsTemplate`：设置网格行列。 |
+|  | `zy429_3.ets` | 商品轮播图练习。 | `Swiper`：自动轮播商品卡片；`Image`：展示网络商品图片；`Text`：展示商品名称和价格；`@State currentIndex`：记录当前轮播页；`onChange`：同步轮播下标。 |
+|  | `zy429_4.ets` | 底部标签栏练习，包含首页、分类、购物车、我的四个页面。 | `Tabs/TabContent`：创建底部标签页；`TabsController`：控制标签页；`tabBar`：自定义底部标签；`SymbolGlyph`：显示系统图标；`@State currentIndex`：切换选中样式。 |
+|  | `zy429_5.ets` | 分组通讯录练习。 | `ListItemGroup`：按首字母分组；`List/ListItem`：展示联系人列表；`ForEach`：遍历分组和联系人；`Row/Column`：组织头像、姓名、电话和标签；`class Contact/ContactGroup`：定义联系人数据。 |
+|  | `zy429_6.ets` | 任务6综合实践：电商 APP 首页，包含轮播图、分类网格、商品列表和底部标签栏。 | `Swiper`：展示首页活动轮播；`Grid/GridItem`：展示商品分类入口；`List/ListItem`：展示商品推荐列表；`Tabs/TabContent`：创建首页、分类、购物车、我的底部标签；`@Builder`：拆分搜索区、轮播、分类、商品项和 TabBar；`class ShopCategory/ShopProduct`：定义分类和商品数据。 |
 
 ## 已练习知识点
 
@@ -87,6 +93,7 @@ entry/src/main/ets/entryability/EntryAbility.ets
 - 表单控件：`Toggle`、`Checkbox`、`Radio`、`Search`。
 - 列表和网格：`List`、`ListItem`、`ForEach`、`Grid`、`GridItem`。
 - 高级展示：`Swiper`、`Tabs`、`TextPicker`、`DatePicker`、`TimePicker`、`ImageAnimator`。
+- 综合页面实践：组合 `Swiper`、`Grid`、`Tabs`、`List` 完成电商首页。
 - 状态与反馈：`Slider`、`Badge`、`LoadingProgress`、`PromptAction.showToast`、`showDialog`、`showActionMenu`。
 - 页面跳转：`router.pushUrl`、`getUIContext().getRouter().back()`。
 
